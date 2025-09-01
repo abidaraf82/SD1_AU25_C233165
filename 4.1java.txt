@@ -1,0 +1,25 @@
+package javaapplication3;
+import java.util.*;
+
+public class JavaApplication3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    double a = -15.2, b = 45, c = 45.6;
+
+        if(a >= b) {
+            if(a >= c)
+                System.out.println(a + " is the largest num.");
+            else
+                System.out.println(c+ " is the largest num.");
+        } else {
+            if(b >= c)
+                System.out.println(b + " is the largest num.");
+            else
+                System.out.println(c + " is the largest num.");
+        }
+    }
+    
+}
