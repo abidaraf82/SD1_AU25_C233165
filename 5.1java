@@ -1,0 +1,40 @@
+package javaapplication3;
+import java.util.*;
+
+public class JavaApplication3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter 1st num:");
+        double num1 = scanner.nextDouble();
+        System.out.println("Enter 2nd num:");
+        double num2 = scanner.nextDouble();
+        System.out.println("Choose oprtn: +, -, *, /");
+        char oprtn = scanner.next().charAt(0);
+        double result;
+        if (oprtn == '+') {
+            result = num1 + num2;
+            System.out.println("Result: " + result);
+        } else if (oprtn == '-') {
+            result = num1 - num2;
+            System.out.println("Result: " + result);
+        } else if (oprtn == '*') {
+            result = num1 * num2;
+            System.out.println("Result: " + result);
+        } else if (oprtn == '/') {
+            if (num2 != 0) {
+                result = num1 / num2;
+                System.out.println("Result: " + result);
+            } else {
+                System.out.println("err : Division by 0 is not allow.");
+            }
+        } else {
+            System.out.println("Invalid oprtn.");
+        }
+        scanner.close();
+    }
+    
+}
