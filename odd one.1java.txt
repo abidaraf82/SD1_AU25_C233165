@@ -1,0 +1,27 @@
+package javaapplication3;
+import java.util.*;
+
+public class JavaApplication3 {
+
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+
+        int odd;
+
+        if (a == b) {
+            odd = c;
+        } else if (a == c) {
+            odd = b;
+        } else {
+            odd = a;
+        }
+        System.out.println(odd);
+        scanner.close();
+    }
+}
+
