@@ -1,0 +1,19 @@
+package javaapplication3;
+import java.util.*;
+
+public class JavaApplication3 {
+
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String word = scanner.nextLine();
+        if (word.length() == 0) {
+            System.out.println("");
+        } else {
+            String capitalized = word.substring(0, 1).toUpperCase() + word.substring(1);
+            System.out.println(capitalized);
+        }
+
+        scanner.close();
+    }
+}
