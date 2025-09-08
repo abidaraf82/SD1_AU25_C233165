@@ -1,0 +1,28 @@
+package javaapplication3;
+import java.util.*;
+
+public class JavaApplication3 {
+
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        int B1 = scanner.nextInt();
+        int B2 = scanner.nextInt();
+        int B3 = scanner.nextInt();
+
+        int emptycount = 0;
+
+        if (B1 == 0) emptycount++;
+        if (B2 == 0) emptycount++;
+        if (B3 == 0) emptycount++;
+
+        if (emptycount >= 2) {
+            System.out.println("Water filling time");
+        } else {
+            System.out.println("Not now");
+        }
+
+        scanner.close();
+    }
+}

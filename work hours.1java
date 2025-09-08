@@ -1,0 +1,19 @@
+package javaapplication3;
+import java.util.*;
+
+public class JavaApplication3 {
+
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int X = scanner.nextInt(); 
+        int Y = scanner.nextInt(); 
+       
+        int totalhours = (4 * X) + Y;
+
+        System.out.println(totalhours);
+
+        scanner.close();
+    }
+}
